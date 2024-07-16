@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/refreshLayout"
+    tools:context=".MainActivity"
+    android:background="@color/orange">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/bestprovider"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="tekst"/>
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="tekst"/>
+        <TextView
+            android:textColor="@color/white"
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="tekst"/>
+        <org.osmdroid.views.MapView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/wys">
+        </org.osmdroid.views.MapView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView
+                android:textSize="@dimen/hightextview"
+                android:textColor="@color/black"
+                android:id="@+id/text_network"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:padding="10dp"/>
+
+            <TextView
+                android:textSize="@dimen/hightextview"
+                android:textColor="@color/black"
+                android:id="@+id/text_gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/archival_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ostatnie dane"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<!--Marcel Parzyszek 4P 2023-->
